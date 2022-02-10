@@ -15,20 +15,22 @@
       <div class="forms-container">
         <div class="signin-signup">
 
-          <form action="#" class="sign-in-form">
+
+          <form action="" class="sign-in-form" onsubmit="return false">
             <h2 class="title">Sign in</h2>
             <div class="input-field">
                 <i class="fas fa-envelope"></i>
-                <input type="email" placeholder="Email" />
+                <input id = "mEmail" type="email" placeholder="Email" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input id = "mPassword" type="password" placeholder="Password" />
             </div>
-            <input type="submit" value="Login" class="btn solid" />
+            <!--input type="submit" value="Login" class="btn solid" onclick="login()"/-->
+            <button onclick="login()" class="btn solid">Login to Account</button>
           </form>
 
-          <form action="#" class="sign-up-form">
+          <form action="" class="sign-up-form" onsubmit="return false">
             <h2 class="title">Sign up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
@@ -46,7 +48,8 @@
               <i class="fas fa-lock"></i>
               <input type="password" placeholder="Password" />
             </div>
-            <input type="submit" class="btn" value="Sign up" />
+            <!--input type="submit" class="btn" value="Sign up" /-->
+            <button onclick="login()" class="btn solid">Login to Account</button>
           </form>
 
         </div>
@@ -66,6 +69,7 @@
           </div>
           <img src="img/log.svg" class="image" alt="" />
         </div>
+
         <div class="panel right-panel">
           <div class="content">
             <h3>One of us ?</h3>
@@ -82,7 +86,24 @@
       </div>
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyB4nnK5Tf5jEgNmUm99aTl7kumDD4Qlyes",
+        authDomain: "lace-aid.firebaseapp.com",
+        databaseURL: "https://lace-aid-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "lace-aid",
+        storageBucket: "lace-aid.appspot.com",
+        messagingSenderId: "380476246304",
+        appId: "1:380476246304:web:f5645eee995d526e6e6f45",
+        measurementId: "G-ZQZWXS0QDZ"
+      };
+      firebase.initializeApp(config);
+    </script>
     <script src="./Assets/js/signup.js"></script>
-    <script src="Assets/js/firebase.js"></script>
+
+
+
   </body>
 </html>

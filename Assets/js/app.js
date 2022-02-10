@@ -3,6 +3,25 @@ var toggle_btn;
 var big_wrapper;
 var hamburger_menu;
 
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+    alert("user is signed in");
+
+    var user = firebase.auth().currentUser;
+
+    if(user != null){
+
+      alert("User is not null")
+
+    }
+
+  } else {
+    // No user is signed in.
+    console.log("no user is signed in")
+  }
+});
+
 function declare() {
   toggle_btn = document.querySelector(".toggle-btn");
   big_wrapper = document.querySelector(".big-wrapper");
