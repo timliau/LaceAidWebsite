@@ -15,7 +15,7 @@ firebase.auth().onAuthStateChanged(function(user) {
       // document.getElementById("hidelogin").style.display = "none";
 
       var change = document.getElementById('output');
-      var tochange = '<li class="dropdown"><img src="./img/img_avatar.png" style="border-radius: 50%; height: 30px; margin-left: 4.5rem; width: 30px;" alt="Avatar"></a><ul><li><a href="#">Profile</a></li><li><a href="#">Measurement</a></li><li><a onclick="logout()" style="cursor: pointer;">Logout</a></li></ul></li>';
+      var tochange = '<li class="dropdown"><img src="./img/img_avatar.png" style="border-radius: 50%; height: 30px; margin-left: 4.5rem; width: 30px;" alt="Avatar"></a><ul><li><a href="../../updateprofile.html">Profile</a></li><li><a href="#">Measurement</a></li><li><a onclick="logout()" style="cursor: pointer;">Logout</a></li></ul></li>';
 
       change.innerHTML = tochange;
     }
