@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .light {
-  --mainColor: #4DC335;
-  --hoverColor: #39A822;
+  --mainColor: #4dc335;
+  --hoverColor: #39a822;
   --backgroundColor: #f1f8fc;
   --darkOne: #312f3a;
   --darkTwo: #45424b;
@@ -11,8 +11,8 @@
 }
 
 .dark {
-  --mainColor: #4DC335;
-  --hoverColor: #39A822;
+  --mainColor: #4dc335;
+  --hoverColor: #39a822;
   --backgroundColor: #192e3a;
   --darkOne: #f3f3f3;
   --darkTwo: #fff;
@@ -417,4 +417,64 @@ header .container {
 
 #app-title {
   margin-bottom: 10px;
+}
+
+/**/
+.links .dropdown ul {
+  display: block;
+  position: absolute;
+  right: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+.links .dropdown ul li {
+  min-width: 200px;
+}
+.links .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 500;
+  color: #0c3c53;
+  margin-left: 2.3rem;
+}
+.links .dropdown ul a i {
+  font-size: 12px;
+}
+.links .dropdown ul a:hover,
+.links .dropdown ul .active:hover,
+.links .dropdown ul li:hover > a {
+  color: #47b2e4;
+}
+.links .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+.links .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+.links .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+@media (max-width: 1366px) {
+  .links .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .links .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
 }
