@@ -87,7 +87,7 @@ $result = mysqli_query($conn, $sql_query);
                 <a href>
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="<?php echo $row['image']?>" alt="..." />
+                        <img class="card-img-top" src="image/<?php echo $row['image']?>" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
