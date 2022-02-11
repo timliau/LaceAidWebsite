@@ -22,12 +22,13 @@
 		// database insert SQL code
 		$sql = "INSERT INTO `messages` (`Id`, `fldName`, `fldEmail`, `fldPhone`, `fldMessage`) VALUES (NULL, '$txtName', '$txtEmail', '$txtPhone', '$txtMessage')";
 
-		// insert in database 
-		$rs = mysqli_query($con, $sql);
-
-		if($rs)
-		{
-			echo "Contact Records Inserted";
+		if($conn->query($sql) === TRUE) {
+    		echo "Insert success";
+		} 
+		else {
+    		echo "Error: " . $mysql_qry . "<br>" . $conn->error;
 		}
+
+		mysqli_close($conn);
 
 	?>
