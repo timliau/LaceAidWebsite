@@ -33,9 +33,9 @@ $amount = $_POST['amount'];
         <input type="hidden" name="amount" value="<?php echo $amount?>">
         <input type="hidden" name="currency_code" value="USD">
         <input type="hidden" name="custom" value="<?= rand(0000, 9999); ?>">
-        <input type="hidden" name="return" value="http://example.com/thankyou.php">
-        <input type="hidden" name="cancel_return" value="http://example.com/failed.php">
-        <input type="hidden" name="notify_url" value="http://example.com/ipn.php">
+        <input type="hidden" name="return" value="http://222.164.5.103/index.html">
+        <input type="hidden" name="cancel_return" value="http://222.164.5.103/index.html">
+        <input type="hidden" name="notify_url" value="http://222.164.5.103/index.html">
     </form>
     <p align="center"><i class="fa fa-paypal"></i></p>
 </body>
