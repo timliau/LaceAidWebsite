@@ -452,7 +452,7 @@ header .container {
 .links .dropdown ul a:hover,
 .links .dropdown ul .active:hover,
 .links .dropdown ul li:hover > a {
-  color: #47b2e4;
+  color: #39a822;
 }
 .links .dropdown:hover > ul {
   opacity: 1;

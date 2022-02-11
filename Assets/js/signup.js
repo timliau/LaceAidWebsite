@@ -6,7 +6,7 @@ const container = document.querySelector(".container");
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
-    alert("user is signed in");
+    console.log("user signed in");
 
     var user = firebase.auth().currentUser;
 
