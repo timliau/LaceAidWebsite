@@ -2,6 +2,7 @@ const sign_in_btn = document.querySelector("#sign-in-btn");
 const sign_up_btn = document.querySelector("#sign-up-btn");
 const container = document.querySelector(".container");
 
+
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
@@ -51,11 +52,14 @@ function signup(){
 
   var userEmail = document.getElementById("pemail").value;
   var userPass = document.getElementById("ppassword").value;
+  var fn = document.getElementById("pfn").value;
+  var ln = document.getElementById("pln").value;
 
   firebase.auth().createUserWithEmailAndPassword(userEmail, userPass)
   .then((userCredential) => {
     // Signed in 
     var user = userCredential.user;
+
     // ...
   })
   .catch((error) => {
