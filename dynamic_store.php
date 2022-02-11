@@ -106,7 +106,7 @@ function carryOver($name, $price, $image) {
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a id=""class="btn btn-outline-dark mt-auto" href="http://222.164.5.103/laceaidwebsite/dynamic_store_item.php" onclick="carryOver(<?php echo $row['name']?>,<?php echo $row['price']?>,<?php echo $row['image']?>)">View options</a></div>
+                            <div class="text-center"><a id=""class="btn btn-outline-dark mt-auto" href="http://222.164.5.103/laceaidwebsite/store_item.php" onclick="carryOver(<?php echo $row['name']?>,<?php echo $row['price']?>,<?php echo $row['image']?>)">View options</a></div>
                         </div>
                     </div>
                 </a>  
