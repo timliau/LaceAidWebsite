@@ -51,12 +51,12 @@ function carryOver($name, $price, $image) {
 
             <div class="links">
               <ul>
-                <li><a href="#">Features</a></li>
                 <li><a href="http://222.164.5.103/runrecords">Your Runs</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="./signup.html" class="btn">Sign up</a></li>
+                <li><a href="./index.html">Features</a></li>
+                <li><a href="./dynamic_store.php">Pricing</a></li>
+                <li><a href="./about.html">Team</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li id="output"><a href="./signup.html" class="btn" id="hidelogin">Sign up</a></li>
                 <li><a href="checkout.html"><img src="img/icon_shopping_cart.png" height="50" width="50" /></a></li>
               </ul>
             </div>
@@ -106,7 +106,7 @@ function carryOver($name, $price, $image) {
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a id=""class="btn btn-outline-dark mt-auto" href="http://222.164.5.103/laceaidwebsite/store_item.php" onclick="carryOver(<?php echo $row['name']?>,<?php echo $row['price']?>,<?php echo $row['image']?>)">View options</a></div>
+                            <div class="text-center"><a id=""class="btn btn-outline-dark mt-auto" href="http://222.164.5.103/laceaidwebsite/store_item.html" onclick="carryOver(<?php echo $row['name']?>,<?php echo $row['price']?>,<?php echo $row['image']?>)">View options</a></div>
                         </div>
                     </div>
                 </a>  
