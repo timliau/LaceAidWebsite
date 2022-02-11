@@ -15,6 +15,12 @@ $response = array();
 
 $sql_query = "select * from dynamicStore";
 $result = mysqli_query($conn, $sql_query);
+
+function carryOver($name, $price, $image) {
+    $_SESSION['name'] = $name;
+    $_SESSION['price'] = $price;
+    $_SESSION['image'] = $image;
+  }
 ?>
 
 <!DOCTYPE html>
@@ -99,7 +105,7 @@ $result = mysqli_query($conn, $sql_query);
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./store_item.html">View options</a></div>
+                            <div class="text-center"><a id=""class="btn btn-outline-dark mt-auto" href="http://222.164.5.103/laceaidwebsite/dynamic_store_item.php" onclick="carryOver(<?php echo $row['name']?>,<?php echo $row['price']?>,<?php echo $row['image']?>)">View options</a></div>
                         </div>
                     </div>
                 </a>  
