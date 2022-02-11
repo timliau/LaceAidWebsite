@@ -12,6 +12,7 @@ if (!$conn) {
 }
 
 $response = array();
+session_start();
 
 $sql_query = "select * from dynamicStore";
 $result = mysqli_query($conn, $sql_query);
